@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>All user data</title>
+    </head>
+    <body>
+         <ul>
+            <li th:each="item : ${list}">
+               name:<span th:text="${item.name}"/> <br/>
+               Address: <span th:text="${item.address}"/> <br/>
+              Number:<span th:text="${item.creditCardNumber}"/> <br/>
+              Id: <span th:long="${item.id}"/><br/>
+            </li>
+        </ul>
+    </body>
+</html>
